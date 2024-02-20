@@ -1,0 +1,30 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.loader
+{
+    transform: rotateX(70deg);
+    margin-left: 550px;
+}
+.loader .element
+{
+    display: block;
+    border-left: 5px solid rgb(35, 199, 231);
+    border-right: 5px solid rgb(35, 199, 231);
+    border-top: dotted 2px rgb(29, 146, 170);
+    width: 25rem;
+    height: 1rem;
+    margin-top: 0.5rem;
+    perspective: 10px;
+    animation: rotate 6s  linear;
+    animation-delay: calc(var(--i) * 0.1s);
+}
+@keyframes rotate 
+{
+    100%
+    {
+        transform: rotateY(360deg);
+    }    
+}
